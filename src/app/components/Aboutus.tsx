@@ -8,16 +8,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import localfont from "next/font/local";
 
-const Ubuntubold = localfont({
-  src: "../fonts/Ubuntu-Bold.ttf",
-});
+
 
 const UbuntuRegular = localfont({
   src: "../fonts/Ubuntu-Regular.ttf",
 });
-const UbuntuMedium = localfont({
-  src: "../fonts/Ubuntu-Medium.ttf",
-});
+
 const UbuntuMediumItalic = localfont({
   src: "../fonts/Ubuntu-MediumItalic.ttf",
 });

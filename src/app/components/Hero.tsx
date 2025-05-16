@@ -2,9 +2,6 @@ import React from 'react'
 import localfont from "next/font/local";
 import Image from 'next/image'
 
-const Ubuntubold = localfont({
-  src: "../fonts/Ubuntu-Bold.ttf",
-});
 
 const UbuntuRegular = localfont({
   src: "../fonts/Ubuntu-Regular.ttf",
