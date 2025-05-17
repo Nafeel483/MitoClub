@@ -1,20 +1,15 @@
 
-import Hero from "./components/Hero";
-
-import AboutUs from "./components/Aboutus";
-import Mah from "./components/Mah";
-import Logos from "./components/Logos";
-import Ecooverview from "./components/Ecooverview";
+import LandingPage from "./pages/LandingPage";
 
 
-export default function Home() {
+
+
+function Home() {
   return (
     <div>
-    <Hero/>
-    <AboutUs />
-    <Ecooverview />
-    <Mah />
-    <Logos />
+      <LandingPage />
     </div>
   )
 }
+
+export default Home;

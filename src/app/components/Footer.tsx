@@ -1,3 +1,4 @@
+"use client";
 import { FaInstagram, FaWhatsapp, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import Image from 'next/image';
 import localfont from "next/font/local";
