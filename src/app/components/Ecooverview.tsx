@@ -72,7 +72,7 @@ const contentMap: Record<ContentKey, ContentData> = {
   },
 };
 
-const Ecooverview = () => {
+const EcoOverview = () => {
   const [selected, setSelected] = useState<ContentKey>("Mito Protocol (Token)");
 
   return (
@@ -121,4 +121,4 @@ const Ecooverview = () => {
   );
 };
 
-export default Ecooverview;
+export default EcoOverview;

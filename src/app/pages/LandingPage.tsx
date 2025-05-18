@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import AboutUs from "../components/Aboutus";
 import Mah from "../components/Mah";
 import Logos from "../components/Logos";
-import Ecooverview from "../components/Ecooverview";
+import EcoOverview from "../components/EcoOverview";
 
 
  function LandingPage() {
@@ -12,7 +12,7 @@ import Ecooverview from "../components/Ecooverview";
     <div>
     <Hero/>
     <AboutUs />
-    <Ecooverview />
+    <EcoOverview />
     <Mah />
     <Logos />
     </div>
