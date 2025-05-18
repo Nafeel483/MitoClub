@@ -56,7 +56,7 @@ export default function Footer() {
       <div className="mt-20 w-full border-t border-[#635189] bg-[rgba(26,26,26,0.4)]" />
 
       <div className="max-w-6xl mx-auto">
-        <div className="mt-15">
+        <div className="mt-10">
           <p className={`text-[18px] text-center text-white/50 font-normal font-[${UbuntuRegular.className}]`}>2025 © Mito All Rights Reserved.</p>
         </div>
       </div>
