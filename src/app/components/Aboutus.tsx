@@ -28,7 +28,7 @@ const GradientCard = ({ children }: { children: React.ReactNode }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
 
-      className="relative rounded-4xl p-[2px] h-[405px] w-[310px] bg-[url('/images/card.png')] bg-contain">
+      className="relative rounded-4xl p-[2px] h-[405px] w-[308px] bg-[url('/images/card.png')] bg-contain bg-no-repeat">
       <div className="rounded-4xl  bg-[#0B0620] p-[10px] text-center h-full flex flex-col justify-start">
         {children}
       </div>
@@ -62,14 +62,14 @@ export default function AboutUs() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-[1300px] mx-auto items-stretch">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-[94%] self-center place-self-center items-stretch">
 
         <GradientCard>
           <Image
             src={one}
             alt="Leo Tan"
-            width={215.48}
-            height={215.48}
+            width={200}
+            height={200}
             className="object-cover rounded-b-2xl mx-auto mb-1 mt-2" />
 
           <h3 className={`font-[${UbuntuRegular.className}] text-[24px] font-medium text-center leading-tight 
@@ -89,8 +89,8 @@ export default function AboutUs() {
           <Image
             src={two}
             alt="K Krypto"
-            width={215.48}
-            height={215.48}
+            width={200}
+            height={200}
             className="object-cover rounded-b-2xl mx-auto mb-1 mt-2" />
 
           <h3 className={`font-[${UbuntuRegular.className}] text-[24px] font-medium text-center leading-tight 
@@ -110,8 +110,8 @@ export default function AboutUs() {
           <Image
             src={three}
             alt="Renaenys"
-            width={215.48}
-            height={215.48}
+            width={200}
+            height={200}
             className="object-cover rounded-b-2xl mx-auto mb-1 mt-2" />
 
           <h3 className={`font-[${UbuntuRegular.className}] text-[24px] font-medium text-center leading-tight 
@@ -130,8 +130,8 @@ export default function AboutUs() {
           <Image
             src={four}
             alt="Mito Admin"
-            width={215.48}
-            height={215.48}
+            width={200}
+            height={200}
             className="object-cover rounded-b-2xl mx-auto mb-1 mt-2" />
 
           <h3 className={`font-[${UbuntuRegular.className}] text-[24px] font-medium text-center leading-tight 

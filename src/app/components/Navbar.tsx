@@ -25,16 +25,16 @@ export default function Home() {
       </div>
 
       {/* Navbar with blurred background */}
-      <nav className="sticky top-0 z-50 m-4 sm:m-6 rounded-[30px] sm:rounded-[90px] bg-white/5 backdrop-blur-[12.5px] px-4 sm:px-6 py-3 text-white font-sans">
+      <nav className="sticky w-[94%] self-center place-self-center top-5 z-50  rounded-[30px] sm:rounded-[90px] bg-white/5 backdrop-blur-[12.5px] text-white font-sans">
         <div className="flex flex-wrap sm:flex-nowrap justify-between items-center px-4 sm:px-6 md:px-12 py-4 gap-4">
           {/* Logo */}
           <div className="text-xl font-bold">
             <Image
               src={Logo}
               alt="MITO Logo"
-              width={51}
-              height={51}
-              className="w-10 h-10 sm:w-[51px] sm:h-[51px]"
+              width={71}
+              height={71}
+              // className="w-10 h-10 sm:w-[71px] sm:h-[71px]"
             />
           </div>
 

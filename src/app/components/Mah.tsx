@@ -22,13 +22,13 @@ const InterRegular = localfont({
 function MAHPage() {
   return (
     <>
-      <div className="flex flex-col items-center px-6 py-12 w-full  min-h-[screen] max-md:px-4 max-sm:px-3">
+      <div className="flex flex-col items-center py-12 w-[94%] self-center place-self-center ">
         <div className="text-center mb-12">
           <h1 className={`text-[64px] font-bold leading-tight bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent inline-block ${Ubuntubold.className}`}>
             {`M.A.H`}
           </h1>
         </div>
-        <div className="flex flex-wrap gap-6 justify-center w-full max-w-[1600px]">
+        <div className="flex flex-wrap gap-6 justify-center w-[94%] self-center place-self-center">
           <div className="flex-1 max-w-[722px] min-w-[300px]">
 
             {/* 1 */}
@@ -39,13 +39,13 @@ function MAHPage() {
                   maskImage: 'linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%)',
                   WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%)'
                 }} />
-              <div className="relative z-10 space-y-6a px-10">
+              <div className="relative z-10 space-y-6a w-[94%] self-center place-self-center ">
 
                 <div className={`mb-4 text-[24px] font-bold leading-8 text-violet-500 font-inter ${InterBold.className}`}>
                   {`Mito AI Bot Strategy`}
                 </div>
 
-                <div className={`text-[17px] leading-6 text-white ${InterRegular.className}`}>
+                <div className={`mb-4 text-[17px] leading-6 text-white ${InterRegular.className}`}>
                   <ul>
                     <li className="list-disc list-inside">Real-time spot &amp; futures execution using predictive
                       modeling </li>
@@ -66,13 +66,13 @@ function MAHPage() {
                   maskImage: 'linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%)',
                   WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%)'
                 }} />
-              <div className="relative z-10 space-y-6a px-10">
+              <div className="relative z-10 space-y-6a w-[94%] self-center place-self-center ">
 
                 <div className={`mb-4 text-[24px] font-bold leading-8 text-violet-500 font-inter ${InterBold.className}`}>
                   {`Quant Bot Strategy`}
                 </div>
 
-                <div className={`text-[17px] leading-6 text-white ${InterRegular.className}`}>
+                <div className={`mb-4 text-[17px] leading-6 text-white ${InterRegular.className}`}>
                   <ul>
                     <li className="list-disc list-inside">  Quantitative system using neural networks + historical patterns </li>
                     <li className="list-disc list-inside">  Capital segmented by risk profile &amp; trading zone </li>
@@ -93,13 +93,13 @@ function MAHPage() {
                   maskImage: 'linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%)',
                   WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%)'
                 }} />
-              <div className="relative z-10 space-y-6a px-10">
+              <div className="relative z-10 space-y-6a w-[94%] self-center place-self-center ">
 
                 <div className={`mb-4 text-[24px] font-bold leading-8 text-violet-500 font-inter ${InterBold.className}`}>
                   {`Tokenomics`}
                 </div>
 
-                <div className="flex gap-6 mb-4 font-semibold text-white max-sm:flex-col">
+                <div className="flex gap-4 mb-4 w-full font-semibold text-white max-sm:flex-col">
                   <div className={`flex-1 text-[17px] list-disc list-inside ${InterRegular.className}`}>Category</div>
                   <div className={`${InterRegular.className}text-right w-[120px] text-[17px] max-sm:text-left`}>
                     Allocation (%)
@@ -139,7 +139,7 @@ function MAHPage() {
                   WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, #000 5%, #000 95%, transparent 100%)'
                 }} />
 
-              <div className="relative z-10 space-y-6a px-10 mb-2">
+              <div className="relative z-10 space-y-6a w-[94%] self-center place-self-center mb-4">
                 <div className={`mb-4 text-[24px] font-bold leading-8 text-violet-500 ${Ubuntubold.className}`}>
                   Powered by MITO DAO &amp; MITO Token Utility
                 </div>

@@ -76,7 +76,7 @@ const EcoOverview = () => {
   const [selected, setSelected] = useState<ContentKey>("Mito Protocol (Token)");
 
   return (
-    <div className="px-4 sm:px-6 lg:px-0 mb-20">
+    <div className="w-[94%] self-center place-self-center mb-20">
       <div className="text-center mb-4">
         <h1 className={`m-2 text-[64px] sm:text-[48px] lg:text-[64px] font-bold leading-tight bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent inline-block ${Ubuntubold.className}`}>
           {'Ecosystem Overview'}
@@ -99,21 +99,22 @@ const EcoOverview = () => {
       </div>
 
 
-      <div className="w-full lg:w-[1066px] h-auto lg:h-[569px]
+      <div className="w-full lg:w-[94%] self-center place-self-center h-auto lg:h-[569px]
          bg-[url('/images/cardEco.png')] bg-[length:100%_100%] opacity-100 mx-auto mt-15 px-4 sm:px-6 lg:px-40 py-6 sm:py-8">
-        
-        <p
-          className={`text-[18px] text-[#854CFF] font-semibold mb-8 mt-10 text-start font-[${UbuntuMedium.className}]`}>
-          {contentMap[selected].description}
-        </p>
 
-        <ul
-          className={`list-disc list-inside text-white text-normal text-[18px] mt-12 leading-tight text-start  font-[${UbuntuRegular.className}] `}
-        >
-          {contentMap[selected].list.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-        </ul>
+        <div className={`w-[85%] self-center place-self-center mt-10 mb-8`}>
+          <p
+            className={`text-[18px] text-[#854CFF] font-semibold text-start font-[${UbuntuMedium.className}]`}>
+            {contentMap[selected].description}
+          </p>
+        </div>
+        <div className={`w-[85%] self-center place-self-center mt-12`}>
+          <ul className={`list-disc list-inside text-white text-normal text-[18px]  leading-tight text-start  font-[${UbuntuRegular.className}] `}>
+            {contentMap[selected].list.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        </div>
       </div>
 
 

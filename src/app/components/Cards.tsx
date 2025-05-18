@@ -25,11 +25,11 @@ const UbuntuItalic = localfont({
 
 const Cards = () => {
   return (
-    <section className="relative w-full flex flex-col items-center justify-center px-4 py-25">
+    <section className="relative w-[94%] self-center place-self-center flex flex-col items-center justify-center py-25">
       <div className="w-full flex flex-wrap gap-6 justify-center">
 
         {/* 1 */}
-        <div className="w-[447px] h-[423px] bg-white/5 rounded-3xl border-[1px] border-solid border-white/25 items-end">
+        <div className="w-[30%] h-[423px] bg-white/5 rounded-3xl border-[1px] border-solid border-white/25 items-end">
           <div className={`mt-20 text-center`} >
 
 
@@ -64,7 +64,7 @@ const Cards = () => {
 
 
         {/* 2 */}
-        <div className="w-[447px] h-[423px] bg-white/5 rounded-3xl border-[1px] border-solid border-white/25 items-end">
+        <div className="w-[30%] h-[423px] bg-white/5 rounded-3xl border-[1px] border-solid border-white/25 items-end">
           <div className={`mt-20 text-center`} >
             <p className={`font-[${Ubuntubold.className}] text-[26px] font-bold
               bg-[linear-gradient(90deg,_#9795FF_0%,_#FFFFFF_42%,_#FFFFFF_59%,_#BE9FFF_100%)] 
@@ -73,7 +73,7 @@ const Cards = () => {
             </p>
 
           </div>
-          <div className={`ml-10 flex flex-row items-center`}>
+          <div className={`ml-5 flex flex-row items-center`}>
             <p className={`font-[${Ubuntubold.className}] text-[#FFFFFF] text-[50px] font-bold`} >
               {"8"}
             </p>
@@ -101,7 +101,7 @@ integrates AI-driven trading, automated staking,and intelligent liquidity soluti
         </div>
 
         {/* 3 */}
-        <div className="w-[447px] h-[423px] bg-white/5 rounded-3xl border-[1px] border-solid border-white/25 items-end">
+        <div className="w-[30%] h-[423px] bg-white/5 rounded-3xl border-[1px] border-solid border-white/25 items-end">
           <div className={`mt-20 ml-10`} >
             <p className={`font-[${Ubuntubold.className}] text-[26px] font-bold
               bg-[linear-gradient(90deg,_#9795FF_0%,_#FFFFFF_42%,_#FFFFFF_59%,_#BE9FFF_100%)] 
@@ -111,7 +111,7 @@ integrates AI-driven trading, automated staking,and intelligent liquidity soluti
           </div>
           <div className={`ml-10 flex flex-row items-end`}>
             <p className={`font-[${Ubuntubold.className}] text-[#FFFFFF] text-[48px] font-bold text-center`} >{"51,281"}</p>
-            <p className={`text-[#FFFFFF] font-medium text-[16px] pb-2 font-[${UbuntuMedium.className}]`}>{"and growing rapidly!"} </p>
+            <p className={`text-[#FFFFFF] font-medium text-[16px] pb-3 font-[${UbuntuMedium.className}]`}>{"and growing rapidly!"} </p>
           </div>
 
           <div className="flex flex-row justify-between items-center">
