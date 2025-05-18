@@ -28,34 +28,7 @@ const Hero = () => {
       {/* Cards directly under the hero text */}
 
       <Cards />
-      {/* <div>
-            <Image
-              src="/Frame1.png"
-              alt="Feature 1"
-              width={447}
-              height={423}
-              className="rounded-lg"
-            />
-          </div>
-          <div>
-            <Image
-              src="/Frame2.png"
-              alt="Feature 2"
-              width={447}
-              height={423}
-              className="rounded-lg"
-            />
-          </div>
-          <div>
-            <Image
-              src="/Frame3.png"
-              alt="Feature 3"
-              width={447}
-              height={423}
-              className="rounded-lg"
-            />
-          </div> */}
-
+     
     </div>
   )
 }
