@@ -1,6 +1,5 @@
 import React from 'react'
 import localfont from "next/font/local";
-import Image from 'next/image';
 import Cards from './Cards';
 
 const UbuntuRegular = localfont({

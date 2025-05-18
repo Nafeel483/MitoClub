@@ -23,7 +23,7 @@ const UbuntuItalic = localfont({
   src: "../fonts/Ubuntu-Italic.ttf",
 });
 
-const Cards = (props: any) => {
+const Cards = () => {
   return (
     <section className="relative w-full flex flex-col items-center justify-center px-4 py-25">
       <div className="w-full flex flex-wrap gap-6 justify-center">
