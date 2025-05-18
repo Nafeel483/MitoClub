@@ -97,22 +97,26 @@ const Ecooverview = () => {
           </div>
         ))}
       </div>
-      <div className={`w-full lg:w-[1066px] h-auto lg:h-[669px] border-[3px] border-b-[0px] border-[#5F00FF] 
-        rounded-[20px] sm:rounded-[30px] mx-auto mt-10 px-4 sm:px-6 lg:px-40 py-6 sm:py-8 text-sm font-['Ubuntu']
-               text-white  rounded-b-none`}>
+
+
+      <div className="w-full lg:w-[1066px] h-auto lg:h-[569px]
+         bg-[url('/images/cardEco.png')] bg-[length:100%_100%] opacity-100 mx-auto mt-15 px-4 sm:px-6 lg:px-40 py-6 sm:py-8">
+        
         <p
           className={`text-[18px] text-[#854CFF] font-semibold mb-8 mt-10 text-start font-[${UbuntuMedium.className}]`}>
           {contentMap[selected].description}
         </p>
 
         <ul
-          className={`list-disc list-inside text-white text-normal text-[18px] mt-20 leading-tight text-start  font-[${UbuntuRegular.className}] `}
+          className={`list-disc list-inside text-white text-normal text-[18px] mt-12 leading-tight text-start  font-[${UbuntuRegular.className}] `}
         >
           {contentMap[selected].list.map((point, index) => (
             <li key={index}>{point}</li>
           ))}
         </ul>
       </div>
+
+
     </div>
   );
 };
