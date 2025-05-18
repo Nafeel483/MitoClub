@@ -18,17 +18,14 @@ export default function Footer() {
     <footer className="bg-[#050020] text-white py-10">
       <div className="max-w-6xl mx-auto">
 
-
         {/* */}
 
-
         <div className="flex flex-col md:flex-row justify-between items-start md:items-start gap-6">
-
 
           <div className="text-sm text-gray-300">
             <div className="mb-6">
               <Image
-                src="/image12.png"
+                src="/logo.png"
                 alt="Logo"
                 width={40}
                 height={40}

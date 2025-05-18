@@ -1,7 +1,7 @@
 import React from 'react'
 import localfont from "next/font/local";
-import Image from 'next/image'
-
+import Image from 'next/image';
+import Cards from './Cards';
 
 const UbuntuRegular = localfont({
   src: "../fonts/Ubuntu-Regular.ttf",
@@ -26,9 +26,9 @@ const Hero = () => {
         </div>
       </section>
       {/* Cards directly under the hero text */}
-      <section className="relative w-full flex flex-col items-center justify-center text-center px-4 py-25">
-        <div className="w-full flex flex-wrap gap-6 justify-center">
-          <div>
+
+      <Cards />
+      {/* <div>
             <Image
               src="/Frame1.png"
               alt="Feature 1"
@@ -54,9 +54,8 @@ const Hero = () => {
               height={423}
               className="rounded-lg"
             />
-          </div>
-        </div>
-      </section>
+          </div> */}
+
     </div>
   )
 }
