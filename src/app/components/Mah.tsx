@@ -86,7 +86,7 @@ function MAHPage() {
             </div>
 
             {/* 3 */}
-            <div className="mb-4 bg-white/5 backdrop-blur-[25px] bg-opacity-20 rounded-4xl p-8 max-w-3xl mx-auto overflow-hidden">
+            <div className="bg-white/5 backdrop-blur-[25px] bg-opacity-20 rounded-4xl p-8 max-w-3xl mx-auto overflow-hidden">
               <div
                 className="absolute m-2 inset-0 bg-[url('/images/mitoCard.png')] bg-[length:100%_100%] opacity-100"
                 style={{
@@ -144,9 +144,9 @@ function MAHPage() {
                   Powered by MITO DAO &amp; MITO Token Utility
                 </div>
 
-                <div className={` mb-6 text-[17px] leading-6 text-white ${InterRegular.className}`}>
+                <div className={`mb-6 text-[17px] leading-6 text-white ${InterRegular.className}`}>
                   <span className="underline">
-                    Mito Shield
+                    {`Mito Shield `}
                   </span>
                   <span>
                     is a Web2.5 protection system offering real-world and Web3 risk
@@ -154,7 +154,7 @@ function MAHPage() {
                     the MITO token for staking, claims, and governance.
                   </span>
                 </div>
-                <div className="mb-4 text-xl font-bold leading-7 text-white">
+                <div className="mb-6 mt-4 text-xl font-bold leading-7 text-white">
                   Insurance Use Cases (7 Protection Projects)
                 </div>
                 <div className="flex flex-col gap-4 text-lg  text-white">

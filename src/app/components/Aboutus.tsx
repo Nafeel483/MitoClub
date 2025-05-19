@@ -41,7 +41,7 @@ export default function AboutUs() {
   return (
     <section className=" py-16 px-6 bg-[#0B0620] mb-15">
       <div className="text-center mb-20">
-       
+
         <h1
           className={`font-[${UbuntuRegular.className}] text-[64px] font-bold leading-tight 
               bg-[linear-gradient(90deg,_#9795FF_0%,_#FFFFFF_42%,_#FFFFFF_59%,_#BE9FFF_100%)] 
@@ -62,8 +62,8 @@ export default function AboutUs() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-[94%] self-center place-self-center items-stretch">
-
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-[94%] self-center place-self-center"> */}
+      <section className="relative w-[94%] self-center place-self-center flex flex-row  gap-4 items-center justify-center">
         <GradientCard>
           <Image
             src={one}
@@ -146,7 +146,8 @@ export default function AboutUs() {
           </p>
 
         </GradientCard>
-      </div>
+      </section>
+      {/* </div> */}
     </section>
   );
 }
