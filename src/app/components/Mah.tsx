@@ -4,7 +4,7 @@
 "use client";
 import localfont from "next/font/local";
 import TOKENOMICS_DATA from '../dataSet/mahData';
-
+import INSURANCE_CASE_DATA from '../dataSet/InsuranceData';
 
 const Ubuntubold = localfont({
   src: "../fonts/Ubuntu-Bold.ttf",
@@ -154,67 +154,29 @@ function MAHPage() {
                     the MITO token for staking, claims, and governance.
                   </span>
                 </div>
-                <div className="mb-6 mt-4 text-xl font-bold leading-7 text-white">
+                <div className="mb-4 mt-4 text-[20px] font-bold leading-7 text-white">
                   Insurance Use Cases (7 Protection Projects)
                 </div>
-                <div className="flex flex-col gap-4 text-lg  text-white">
-                  <div>
-                    <ol >
-                      <li className="underline">Wallet Hack Reimbursement</li></ol>
-                    <span>
-                      Covers losses from verified wallet hacks, unauthorized
-                      transactions, or malicious approvals.
-                    </span>
-                  </div>
-                  <div>
-                    <span className="underline">
-                      Token Price Crash Compensation
-                    </span>
-                    <span>
-                      Provides partial reimbursement when major blue-chip tokens
-                      (BTC, ETH, BNB, etc.) crash ≥70% in 24 hours.
-                    </span>
-                  </div>
-                  <div>
-                    <span className="underline">
-                      Web3 Phishing Link Compensation
-                    </span>
-                    <span>
-                      Protects against losses from clicking phishing links (Discord,
-                      Twitter, etc.), leading to asset theft.
-                    </span>
-                  </div>
-                  <div>
-                    <span className="underline">Auto-Liquidation Relief</span>
-                    <span>
-                      Compensation for auto-liquidation events in supported
-                      exchanges (e.g., Bybit, Binance,Bitunix,Pionex) under
-                      DAO-approved conditions.
-                    </span>
-                  </div>
-                  <div>
-                    <span className="underline">
-                      Mobile Device Accidental Damage
-                    </span>
-                    <span>
-                      Covers physical damage to registered mobile devices (e.g.,
-                      cracked screen, water damage).
-                    </span>
-                  </div>
-                  <div>
-                    <span className="underline">Life Continuity Support</span>
-                    <span>
-                      Payout for death or permanent total disablement, sent to the
-                      user &apos;s nominated beneficiary.
-                    </span>
-                  </div>
-                  <div>
-                    <span className="underline">Income Protection</span>
-                    <span>
-                      Support for temporary income loss due to illness or injury,
-                      verified through medical documentation.
-                    </span>
-                  </div>
+                <div className="flex flex-col gap-4 text-[17px] font-normal text-white">
+
+                  <ol className="list-decimal pl-5">
+                    {INSURANCE_CASE_DATA.map((item) => (
+                      <li key={item.id} className="mb-2">
+                        <a
+                          href={item.link}
+                          target={item.target}
+                          rel={item.target ? "noopener noreferrer" : undefined}
+                          className={`text-white underline ${item.className || ""}`}
+                        >
+                          {item.title}
+                        </a>
+                        <ul className="list-disc list-outside">
+                          <li className="list-inside">{item.detail}</li>
+                        </ul>
+                      </li>
+                    ))}
+                  </ol>
+
                 </div>
 
               </div>

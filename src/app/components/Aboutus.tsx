@@ -63,7 +63,7 @@ export default function AboutUs() {
       </div>
 
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-[94%] self-center place-self-center"> */}
-      <section className="relative w-[94%] self-center place-self-center flex flex-row  gap-4 items-center justify-center">
+      <section className="relative w-[94%] self-center place-self-center flex flex-row  gap-6 items-center justify-center">
         <GradientCard>
           <Image
             src={one}
