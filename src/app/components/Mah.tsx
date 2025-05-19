@@ -45,7 +45,7 @@ function MAHPage() {
                   {`Mito AI Bot Strategy`}
                 </div>
 
-                <div className={`mb-4 text-[17px] leading-6 text-white ${InterRegular.className}`}>
+                <div className={`mb-3 text-[17px] leading-6 text-white ${InterRegular.className}`}>
                   <ul>
                     <li className="list-disc list-inside">Real-time spot &amp; futures execution using predictive
                       modeling </li>
@@ -72,7 +72,7 @@ function MAHPage() {
                   {`Quant Bot Strategy`}
                 </div>
 
-                <div className={`mb-4 text-[17px] leading-6 text-white ${InterRegular.className}`}>
+                <div className={`mb-3 text-[17px] leading-6 text-white ${InterRegular.className}`}>
                   <ul>
                     <li className="list-disc list-inside">  Quantitative system using neural networks + historical patterns </li>
                     <li className="list-disc list-inside">  Capital segmented by risk profile &amp; trading zone </li>
