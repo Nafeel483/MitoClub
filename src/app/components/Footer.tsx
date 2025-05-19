@@ -47,7 +47,9 @@ export default function Footer() {
               <a href="#" className="hover:text-purple-400"><FaInstagram /></a>
               <a href="#" className="hover:text-purple-400"><FaWhatsapp /></a>
               <a href="#" className="hover:text-purple-400"><FaLinkedinIn /></a>
-              <a href="#" className="hover:text-purple-400"><FaTwitter /></a>
+              <a href="https://x.com/MitoDeFAI"
+								target="_blank"
+								rel="noopener noreferrer" className="hover:text-purple-400"><FaTwitter /></a>
             </div>
           </div>
         </div>
