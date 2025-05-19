@@ -22,7 +22,7 @@ const InterRegular = localfont({
 function MAHPage() {
   return (
     <>
-      <div className="flex flex-col items-center py-12 w-[94%] self-center place-self-center ">
+      <div className="flex flex-col items-center py-12 w-[94%] self-center place-self-center mb-20">
         <div className="text-center mb-12">
           <h1 className={`text-[64px] font-bold leading-tight bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent inline-block ${Ubuntubold.className}`}>
             {`M.A.H`}
