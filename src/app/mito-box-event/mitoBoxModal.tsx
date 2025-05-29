@@ -19,10 +19,9 @@ const RobotoMedium = localfont({
 
 type MitoBoxModalProps = {
   setIsOpen: () => void;
-  handleUnderstandClick: () => void;
 };
 
-export default function MitoBoxModal({ setIsOpen, handleUnderstandClick }: MitoBoxModalProps) {
+export default function MitoBoxModal({ setIsOpen }: MitoBoxModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md bg-opacity-50"
@@ -83,7 +82,7 @@ export default function MitoBoxModal({ setIsOpen, handleUnderstandClick }: MitoB
 
         <div className="text-right">
 
-          <button onClick={handleUnderstandClick}
+          <button onClick={setIsOpen}
             className={`px-8 py-3 bg-[linear-gradient(86deg,_#9795FF_-14.86%,_#854CFF_38.66%,_#504CFF_87.19%)] hover:bg-[linear-gradient(86deg,_#9795FF_-14.86%,_#854CFF_38.66%,_#504CFF_87.19%)] text-white rounded-lg text-[16] font-[${RobotoSemiBold.className}]`}>
             Understand
           </button>

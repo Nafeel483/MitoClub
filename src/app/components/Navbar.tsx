@@ -34,8 +34,6 @@ export default function Navbar() {
   return (
     <>
 
-     
-
       {/* Navbar with blurred background */}
       <nav className="sticky w-[94%] self-center place-self-center z-50 top-8 rounded-[30px] sm:rounded-[90px] bg-white/5 backdrop-blur-[12.5px] text-white font-sans">
         <div className="flex flex-wrap sm:flex-nowrap justify-between items-center px-4 sm:px-6 md:px-12 py-4 gap-4">

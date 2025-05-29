@@ -18,9 +18,10 @@ const UbuntuMedium = localfont({
 type EventSectionProps = {
   setIsOpen: () => void;
   hasJoined: boolean;
+  handleUnderstandClick: () => void;
 };
 
-export default function EventSection({ setIsOpen, hasJoined }: EventSectionProps) {
+export default function EventSection({ setIsOpen, hasJoined, handleUnderstandClick }: EventSectionProps) {
 
   const [timeLeft, setTimeLeft] = useState({
     hours: 14,
@@ -67,7 +68,8 @@ export default function EventSection({ setIsOpen, hasJoined }: EventSectionProps
       </div>*/}
 
       {/* Info button */}
-      <button className="absolute top-20 right-6 text-black">
+      <button onClick={setIsOpen}
+        className="absolute top-20 right-6 text-black">
         <Info className="w-5 h-5" fill={"white"} />
       </button>
 
@@ -180,11 +182,12 @@ export default function EventSection({ setIsOpen, hasJoined }: EventSectionProps
             <button
               className={`px-8 py-3 bg-[#C4C4C4] hover:bg-[#C4C4C4]  text-white rounded-full text-[22] font-[${UbuntuRegular.className}] `}>
               {`Try Again Tomorrow!`}
+              {/* {`You Joined: X times`} */}
             </button>
           </div>
           :
 
-          <button onClick={setIsOpen}
+          <button onClick={handleUnderstandClick}
             className={`px-8 py-3 bg-[linear-gradient(86deg,_#9795FF_-14.86%,_#854CFF_38.66%,_#504CFF_87.19%)] hover:bg-[linear-gradient(86deg,_#9795FF_-14.86%,_#854CFF_38.66%,_#504CFF_87.19%)] text-white rounded-full text-[22] font-[${UbuntuRegular.className}] shadow-glow-purple`}>
             {`Join Game`}
           </button>

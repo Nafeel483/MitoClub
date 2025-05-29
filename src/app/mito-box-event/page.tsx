@@ -56,17 +56,16 @@ function MitoBoxEvent() {
   };
 
   const handleUnderstandClick = () => {
-    setIsOpen(false);
     setHasJoined(true);
   };
   return (
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mt-30 mb-30">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mt-30 mb-20">
       {/* Left */}
       <div className="flex-1 max-w-[722px] min-w-[300px] w-[90%] flex self-center justify-center items-center place-self-center">
 
         <div className="w-[90%] self-center justify-center items-center place-self-center">
-          <EventSection setIsOpen={handleJoinClick} hasJoined={hasJoined} />
+          <EventSection setIsOpen={handleJoinClick} hasJoined={hasJoined} handleUnderstandClick={handleUnderstandClick}/>
         </div>
 
       </div>
@@ -74,7 +73,7 @@ function MitoBoxEvent() {
       {/* Right */}
       <div className="flex-1 max-w-[722px] min-w-[300px] w-[90%] self-center place-self-center">
 
-        <div className="w-[80%] self-center place-self-center -mt-55">
+        <div className="w-[80%] self-center place-self-center -mt-60">
           <div className="text-center">
             <h1
               className={`text-[40px] font-bold leading-tight bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent inline-block font-${Ubuntubold.className}`}>
@@ -87,20 +86,20 @@ function MitoBoxEvent() {
             <div
               key={idx}
               className={clsx(
-                "rounded-xl p-4 mt-4 w-[90%] self-center place-self-center",
+                "rounded-xl p-6 mt-4 w-[80%] self-center place-self-center",
                 item.highlighted
                   ? "bg-gradient-to-r from-[#9795FF] via-[#854CFF] to-[#504CFF]"
                   : "bg-gradient-to-r from-[#C4C4C4] via-[#A3A3A3] to-[#52565F]"
               )}>
               <div className="w-[94%] self-center place-self-center">
                 <div className="flex justify-between items-center">
-                  <p className={clsx(`text-[28px] font-medium font-[${UbuntuMedium.className}]`,
+                  <p className={clsx(`text-[28] font-medium font-[${UbuntuMedium.className}]`,
                     item.highlighted ? "text-white" : "text-black"
                   )}>{item.title}</p>
 
                   <div className={`text-center`}>
-                    <p className={`text-[#5FC97A] text-[20px] font-normal font-[${UbuntuRegular.className}]`}>{`Draw took place on`}</p>
-                    <p className={clsx(`text-[20px] font-medium  font-[${UbuntuMedium.className}]`,
+                    <p className={`text-[#5FC97A] text-[20] font-normal font-[${UbuntuRegular.className}]`}>{`Draw took place on`}</p>
+                    <p className={clsx(`text-[20] font-medium  font-[${UbuntuMedium.className}]`,
                       item.highlighted ? "text-white" : "text-black"
                     )}>{item.date}</p>
                   </div>
@@ -108,7 +107,7 @@ function MitoBoxEvent() {
                 <hr className={clsx("my-2",
                   item.highlighted ? "border-white" : "border-black"
                 )} />
-                <p className={clsx(`text-[20px] font-normal mt-2 font-[${UbuntuRegular.className}]`,
+                <p className={clsx(`text-[20] font-normal mt-2 font-[${UbuntuRegular.className}]`,
                   item.highlighted ? "text-white" : "text-black"
                 )}>{item.code}</p>
               </div>
@@ -119,7 +118,7 @@ function MitoBoxEvent() {
       </div>
 
       {isOpen && (
-        <MitoBoxModal setIsOpen={closeModal} handleUnderstandClick={handleUnderstandClick} />
+        <MitoBoxModal setIsOpen={closeModal}  />
       )}
 
     </div>
