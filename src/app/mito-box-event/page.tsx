@@ -63,7 +63,7 @@ function MitoBoxEvent() {
 
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mt-30 mb-30">
       {/* Left */}
-      <div className="flex-1 max-w-[722px] min-w-[300px]">
+      <div className="flex-1 max-w-[722px] min-w-[300px] w-[90%] flex self-center justify-center items-center place-self-center">
 
         <div className="w-[90%] self-center justify-center items-center place-self-center">
           <EventSection setIsOpen={handleJoinClick} hasJoined={hasJoined} />
@@ -72,7 +72,7 @@ function MitoBoxEvent() {
       </div>
 
       {/* Right */}
-      <div className="flex-1 max-w-[722px] min-w-[300px]">
+      <div className="flex-1 max-w-[722px] min-w-[300px] w-[90%] flex self-center justify-center items-center place-self-center">
 
         <div className="w-[80%] self-center justify-center items-center place-self-center">
           <div className="text-center mt-4">
