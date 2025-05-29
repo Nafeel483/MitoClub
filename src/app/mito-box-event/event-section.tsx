@@ -67,7 +67,7 @@ export default function EventSection({ setIsOpen, hasJoined, handleUnderstandCli
             ) : (
               <div className="flex justify-center items-center space-x-4 sm:space-x-8 text-white">
                 {["hours", "minutes", "seconds"].map((label, i) => (
-                  <div key={label} className="flex flex-col text-center">
+                  <div key={i} className="flex flex-col text-center">
                     <h1 className={`text-[40px] sm:text-[64px] font-bold bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent ${Ubuntubold.className}`}>
                       {String(timeLeft[label as keyof typeof timeLeft]).padStart(2, "0")}
                     </h1>
