@@ -47,9 +47,9 @@ function MitoBoxEvent() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasJoined, setHasJoined] = useState(false);
 
-   const closeModal = () => setIsOpen(false);
+  const closeModal = () => setIsOpen(false);
 
-   const handleJoinClick = () => {
+  const handleJoinClick = () => {
     if (!hasJoined) {
       setIsOpen(true);
     }
@@ -61,13 +61,12 @@ function MitoBoxEvent() {
   };
   return (
 
-    <div className="flex flex-row gap-8 w-[94%] self-center place-self-center mt-30 mb-30">
-
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mt-30 mb-30">
       {/* Left */}
       <div className="flex-1 max-w-[722px] min-w-[300px]">
 
         <div className="w-[90%] self-center place-self-center">
-          <EventSection setIsOpen={handleJoinClick} hasJoined={hasJoined}/>
+          <EventSection setIsOpen={handleJoinClick} hasJoined={hasJoined} />
         </div>
 
       </div>
@@ -120,7 +119,7 @@ function MitoBoxEvent() {
       </div>
 
       {isOpen && (
-        <MitoBoxModal setIsOpen={closeModal} handleUnderstandClick={handleUnderstandClick}/>
+        <MitoBoxModal setIsOpen={closeModal} handleUnderstandClick={handleUnderstandClick} />
       )}
 
     </div>
