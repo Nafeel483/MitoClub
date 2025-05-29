@@ -74,8 +74,8 @@ function MitoBoxEvent() {
       {/* Right */}
       <div className="flex-1 max-w-[722px] min-w-[300px] w-[90%] flex self-center justify-center items-center place-self-center">
 
-        <div className="w-[80%] self-center justify-center items-center place-self-center">
-          <div className="text-center mt-4">
+        <div className="w-[80%] self-center place-self-center">
+          <div className="text-center">
             <h1
               className={`text-[40px] font-bold leading-tight bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent inline-block font-${Ubuntubold.className}`}>
               {`Mito Box Lucky Board`}
