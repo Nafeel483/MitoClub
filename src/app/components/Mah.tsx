@@ -10,8 +10,6 @@ const Ubuntubold = localfont({
   src: "../fonts/Ubuntu-Bold.ttf",
 });
 
-
-
 const InterBold = localfont({
   src: "../fonts/Inter-Bold.ttf",
 });
