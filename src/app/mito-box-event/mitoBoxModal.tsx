@@ -17,12 +17,16 @@ const RobotoMedium = localfont({
   src: "../fonts/Roboto-Medium.ttf",
 })
 
-export default function MitoBoxModal(props: any) {
-  const { setIsOpen, handleUnderstandClick } = props;
-  const closeModal = () => setIsOpen(false);
+type MitoBoxModalProps = {
+  setIsOpen: () => void;
+  handleUnderstandClick: () => void;
+};
+
+export default function MitoBoxModal({ setIsOpen, handleUnderstandClick }: MitoBoxModalProps) {
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md bg-opacity-50"
-      onClick={closeModal}>
+      onClick={setIsOpen}>
       <div className="bg-white rounded-xl max-w-2xl w-full p-6 shadow-lg overflow-y-auto max-h-[80vh]">
         <h2 className={`text-[24px] font-bold text-[#854CFF] mb-4 mt-2 font-[${RobotoBold.className}]`}>
           How to Join Mito Box (Daily Lucky Draw)

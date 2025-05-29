@@ -14,8 +14,14 @@ const Ubuntubold = localfont({
 const UbuntuMedium = localfont({
   src: "../fonts/Ubuntu-Medium.ttf",
 });
-export default function EventSection(props: any) {
-  const { setIsOpen, hasJoined } = props;
+
+type EventSectionProps = {
+  setIsOpen: () => void;
+  hasJoined: boolean;
+};
+
+export default function EventSection({ setIsOpen, hasJoined }: EventSectionProps) {
+
   const [timeLeft, setTimeLeft] = useState({
     hours: 14,
     minutes: 9,
@@ -178,7 +184,7 @@ export default function EventSection(props: any) {
           </div>
           :
 
-          <button onClick={() => setIsOpen(true)}
+          <button onClick={setIsOpen}
             className={`px-8 py-3 bg-[linear-gradient(86deg,_#9795FF_-14.86%,_#854CFF_38.66%,_#504CFF_87.19%)] hover:bg-[linear-gradient(86deg,_#9795FF_-14.86%,_#854CFF_38.66%,_#504CFF_87.19%)] text-white rounded-full text-[22] font-[${UbuntuRegular.className}] shadow-glow-purple`}>
             {`Join Game`}
           </button>
