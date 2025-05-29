@@ -72,7 +72,7 @@ function MitoBoxEvent() {
       </div>
 
       {/* Right */}
-      <div className="flex-1 max-w-[722px] min-w-[300px] w-[90%] flex self-center justify-center items-center place-self-center">
+      <div className="flex-1 max-w-[722px] min-w-[300px] w-[90%] flex self-center place-self-center">
 
         <div className="w-[80%] self-center place-self-center">
           <div className="text-center">
