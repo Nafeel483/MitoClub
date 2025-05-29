@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Logo from '../../../public/logo.png';
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -18,21 +18,13 @@ const NavBarOptions = [
 ]
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  // const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
 
   // Close mobile menu when path changes
-  useEffect(() => {
-    setIsOpen(false)
-  }, [pathname])
-
-  // const navItems = [
-  //   { name: "Home", path: "/" },
-
-  //   { name: "About", path: "/about" },
-  // ]
-
-
+  // useEffect(() => {
+  //   setIsOpen(false)
+  // }, [pathname])
 
   const variants = {
     hidden: { opacity: 0, y: -5 },
@@ -79,7 +71,7 @@ export default function Navbar() {
               <div className="flex gap-8 mr-6">
                 {NavBarOptions.map((item, index) => (
                   <motion.div
-                    key={item.path}
+                    key={index}
                     initial="hidden"
                     animate="visible"
                     exit="hidden"

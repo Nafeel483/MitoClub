@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import localfont from "next/font/local";
 import clsx from "clsx";
 import EventSection from './event-section';

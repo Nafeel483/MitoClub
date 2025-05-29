@@ -3,8 +3,6 @@
 import { useState, useEffect } from "react";
 import { Info } from "lucide-react";
 import localfont from "next/font/local";
-import Image from "next/image";
-// import eventBackground from '../../../public/images/event.png';
 
 const UbuntuRegular = localfont({
   src: "../fonts/Ubuntu-Regular.ttf",

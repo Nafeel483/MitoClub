@@ -4,9 +4,6 @@ import React from 'react';
 import localfont from "next/font/local";
 
 
-const UbuntuRegular = localfont({
-  src: "../fonts/Ubuntu-Regular.ttf",
-})
 
 const RobotoSemiBold = localfont({
   src: "../fonts/Roboto-SemiBold.ttf",
