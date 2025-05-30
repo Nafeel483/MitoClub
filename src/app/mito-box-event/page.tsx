@@ -74,7 +74,7 @@ function MitoBoxEvent() {
 
       {/* Right */}
       <div className="flex-1 max-w-[722px] min-w-[300px] w-full sm:w-[90%] self-center place-self-center">
-        <div className="w-full sm:w-[80%] self-center place-self-center -mt-10 sm:-mt-60 px-2 sm:px-0">
+        <div className="w-full sm:w-[90%] self-center place-self-center -mt-10 sm:-mt-60 px-2 sm:px-0">
           <div className="text-center">
             <h1
               className={`text-2xl sm:text-[40px] font-bold leading-tight bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent inline-block font-${Ubuntubold.className}`}>
