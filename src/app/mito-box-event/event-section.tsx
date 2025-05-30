@@ -90,7 +90,7 @@ export default function EventSection({ setIsOpen, hasJoined, handleUnderstandCli
                   </h1>
                   <h4 className={`text-base sm:text-[28px] font-medium bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent ${UbuntuMedium.className}`}>{unit}</h4>
                 </div>
-              )).reduce((acc: any[], curr, i, arr) => acc.concat(curr, i < arr.length - 1 ? <h1 key={`sep-${i}`} className="-mt-2 sm:-mt-6 text-3xl sm:text-[64px] font-bold bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent">:</h1> : []), [])}
+              )).reduce((acc: React.ReactNode[], curr, i, arr) => acc.concat(curr, i < arr.length - 1 ? <h1 key={`sep-${i}`} className="-mt-2 sm:-mt-6 text-3xl sm:text-[64px] font-bold bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent">:</h1> : []), [])}
             </div>
           </div>
         )}
