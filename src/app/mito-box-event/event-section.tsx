@@ -72,7 +72,7 @@ export default function EventSection({ setIsOpen, hasJoined, handleUnderstandCli
         </div>
 
         {hasJoined ? (
-          <div className="w-full sm:w-[80%] mx-auto bg-white/10 rounded-2xl p-4 sm:p-6 border border-white/20 relative z-10 mt-10 sm:mt-15 backdrop-blur-md">
+          <div className="w-full sm:w-[90%] mx-auto bg-white/10 rounded-2xl p-4 sm:p-4 border border-white/20 relative z-10 mt-10 sm:mt-15 backdrop-blur-md">
             <div className="flex items-center justify-center text-white">
               <div className="flex flex-col text-center">
                 <h2 className={`text-2xl sm:text-[48px] font-bold bg-gradient-to-r from-[#9795FF] via-white to-[#BE9FFF] bg-clip-text text-transparent ${Ubuntubold.className}`}>{`Today’s `}</h2>
@@ -81,7 +81,7 @@ export default function EventSection({ setIsOpen, hasJoined, handleUnderstandCli
             </div>
           </div>
         ) : (
-          <div className="w-full sm:w-[80%] mx-auto bg-white/10 rounded-2xl p-4 sm:p-6 border border-white/20 relative z-10 mt-10 sm:mt-15 backdrop-blur-md">
+          <div className="w-full sm:w-[90%] mx-auto bg-white/10 rounded-2xl p-4 sm:p-4 border border-white/20 relative z-10 mt-10 sm:mt-15 backdrop-blur-md">
             <div className="flex flex-row sm:flex-row items-center justify-center space-x-4 sm:space-x-8 text-white">
               {['hours', 'minutes', 'seconds'].map((unit, index) => (
                 <div className="flex flex-col text-center" key={index}>
